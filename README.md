@@ -1,6 +1,6 @@
-<h1 align="center">2018K .NET框架 C# 实例）</h1>
+<h1 align="center">2018K .NET C# 瀹炰緥</h1>
 <p align="center">
-    <strong> HaiTangUpdate.dll 客户端调用Dome</strong>
+    <strong> HaiTangUpdate.dll 瀹㈡埛绔皟鐢―ome</strong>
 </p>
 
 <BR>
