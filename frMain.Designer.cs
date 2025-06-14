@@ -78,6 +78,7 @@
             button3 = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            linkLabel2 = new LinkLabel();
             linkLabel1 = new LinkLabel();
             pictureBox1 = new PictureBox();
             label11 = new Label();
@@ -596,6 +597,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(linkLabel2);
             tabPage1.Controls.Add(linkLabel1);
             tabPage1.Controls.Add(pictureBox1);
             tabPage1.Controls.Add(button20);
@@ -638,16 +640,28 @@
             tabPage1.Text = " 常用工具 ";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            linkLabel2.Location = new Point(1292, 320);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(74, 21);
+            linkLabel2.TabIndex = 11;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "海棠云螭";
+            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            linkLabel1.Location = new Point(1220, 320);
+            linkLabel1.Location = new Point(1224, 320);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(74, 21);
+            linkLabel1.Size = new Size(60, 21);
             linkLabel1.TabIndex = 11;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "海棠云螭";
+            linkLabel1.Text = "github";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // pictureBox1
@@ -667,7 +681,7 @@
             label11.Name = "label11";
             label11.Size = new Size(423, 96);
             label11.TabIndex = 9;
-            label11.Text = "本实例目的皆在让使用c#开发的同学更快的使用C# SDK\r\n实例中给出了调用方法和输出结果\r\n\r\n如果想要研究本代码，联系 ";
+            label11.Text = "本实例目的皆在让使用c#开发的同学更快的使用C# SDK\r\n实例中给出了调用方法和输出结果\r\n\r\n如果想要研究本代码，访问 ";
             // 
             // SaveJson
             // 
@@ -847,7 +861,7 @@
             button23.UseVisualStyleBackColor = true;
             button23.Click += button23_Click;
             // 
-            // Form1
+            // frMain
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -858,7 +872,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "frMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "  .NET 框架演示";
             Load += Form1_Load;
@@ -940,6 +954,7 @@
         private Button button27;
         private Button button32;
         private Button ReplaceBind;
+        private LinkLabel linkLabel2;
     }
 }
 

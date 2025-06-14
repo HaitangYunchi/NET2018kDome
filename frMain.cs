@@ -143,7 +143,7 @@ namespace NET_2018K
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string url = "https://space.bilibili.com/3493128132626725";
+            string url = "https://github.com/HaitangYunchi/NET2018kDome";
             Process.Start(new ProcessStartInfo
             {
                 FileName = url,
@@ -706,7 +706,7 @@ namespace NET_2018K
             else
             {
                 var response = await up.GetExpirationDate(id, key, Code.Text);
-               
+
                 string _info = @"因为库是采用异步加载的方式，所以我们定义事件为[async]
 我们调用库方法的时候要用[await]
 采用异步他不阻塞UI线程
@@ -772,7 +772,7 @@ namespace NET_2018K
                 return;
             }
             else
-            {              
+            {
                 string _info = @"因为库是采用异步加载的方式，所以我们定义事件为[async]
 我们调用库方法的时候要用[await]
 采用异步他不阻塞UI线程
@@ -892,7 +892,7 @@ namespace NET_2018K
 
 ";
                 var response = await up.GetMandatoryUpdate(id, key, Code.Text);
-                
+
                 txtResult.Text = _info + response;
             }
         }
@@ -966,7 +966,7 @@ namespace NET_2018K
             txtResult.Text = response;
         }
 
-输出变量 ["+CloudVar.Text +@"] 的值如下：
+输出变量 [" + CloudVar.Text + @"] 的值如下：
 
 ";
 
@@ -1228,7 +1228,7 @@ namespace NET_2018K
                         MessageBox.Show("请输入卡密ID", "错误", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-                    string response = await up.ReplaceBind(id, key,authID.Text, Code.Text);
+                    string response = await up.ReplaceBind(id, key, authID.Text, Code.Text);
 
                     // 显示结果
                     txtResult.Text = response;
@@ -1239,6 +1239,16 @@ namespace NET_2018K
                     MessageBox.Show($"发生错误: {ex.Message}", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = "https://space.bilibili.com/3493128132626725";
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = url,
+                UseShellExecute = true
+            });
         }
     }
 
